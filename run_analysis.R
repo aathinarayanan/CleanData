@@ -57,8 +57,6 @@ run_analysis <- function(workingFolder = "") {
     
     #3.Uses descriptive activity names to name the activities in the data set
     
-    
-    #column bind  activity and test/train measurements:
     mapActivity <-merge(x=yTrainTest,y=activityLabels, by.x="V1", by.y="V1", all=TRUE)
     
     ##Add column name as "activity" to the merged y test/train data
