@@ -1,0 +1,36 @@
+Code Book containing variables and its descriptions used in run_analysis.R 
+
+
+Variable		  			Type			Description
+---------					-----------		--------------------------------
+xTrain 						Data frame 		Data loaded from "X_train.txt"
+xTest						Data frame		Data loaded from "X_test.txt"
+
+yTrain 						Data frame 		Data loaded from "y_train.txt"
+yTest						Data frame		Data loaded from "y_test.txt"
+
+subjectTrain				Data frame 		Data loaded from "subject_train.txt"
+subjectTest					Data frame		Data loaded from "subject_test.txt"
+
+features					Data frame 		Data loaded from "features.txt"
+activityLabels				Data frame		Data loaded from "activity_labels.txt"
+
+xTrainTest					Data frame 		Merged data of xTrain and xTest Data Frames.
+yTrainTest					Data frame 		Merged data of yTrain and yTest Data Frames.
+subjectTrainTest			Data frame 		Merged data of subjectTrain and subjectTest Data Frames.
+
+trainTestDs					Data frame 		Column merged data of yTrainTest and xTrainTest Data Frames.
+
+mesurmentsWithMeansDS		Data frame 		Measurements with mean data.
+mesurmentsWithStdDS			Data frame 		Measurements with std data.
+mapActivity					Data Frame		Activities with description
+
+actitvityWithMeansDS		Data Frame		Activities with mean
+actitvityWithStdDS			Data Frame		Activities with std
+activityDS					Data Frame		Activities with mean and std
+
+subjectActivityDs			Data Frame		Tidy data with activities, subject and measurement
+
+meltDs						Data Frame		melt the dataframe for easy casting
+
+averageBySubjectActivityDS	Data Frame	Final tidy data with average of measurements of each activities and for each subject.
